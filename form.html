@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>台灣原創設計的品牌童裝 - Haizipeni 孩子陪你</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.js"></script>
+    <![endif]-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.ddslick.js"></script>
+    <script src="js/imgLiquid-min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+  		<div id="form" class="container page-t">
+		<section class="section" style="max-width: 750px;margin: 0 auto;">
+			<h4 class="bottom-line">基本表單</h4>
+			<!--radio-->
+			<div class="form-group">
+				<label for="" class="col-xs-2 control-label">單選</label>
+				<div class="col-xs-10">
+					<div class="radio">
+					  	<label>
+						  <input type="radio" name="radio1" checked> radio1
+						</label>
+						<label>
+						  <input type="radio" name="radio1"> radio2
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<!-- 欄位前不需要文字 寫法如下
+
+			<div class="form-group">
+				<div class="radio">
+				  	<label>
+					  <input type="radio" name="radio1" checked> radio1
+					</label>
+					<label>
+					  <input type="radio" name="radio1"> radio2
+					</label>
+				</div>
+			</div>
+			-->
+			<!--checkbox-->
+			<div class="form-group">
+				<label for="" class="col-xs-2 control-label">多選</label>
+				<div class="col-xs-10">
+					<div class="checkbox">
+					  	<label>
+						  <input type="checkbox" name="checkbox1" checked> checkbox1
+						</label>
+						<label>
+						  <input type="checkbox" name="checkbox1"> checkbox2
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- 欄位前不需要文字 寫法如下
+
+			<div class="form-group">
+				<div class="checkbox">
+				  	<label>
+					  <input type="checkbox" name="checkbox1" checked> checkbox1
+					</label>
+					<label>
+					  <input type="checkbox" name="checkbox1"> checkbox2
+					</label>
+				</div>
+			</div>
+			-->
+			<!--text-->
+			<div class="form-group">
+				<label for="" class="col-xs-2 control-label">Email</label>
+				<div class="col-xs-10">
+					<input type="text" class="form-control">
+				</div>
+			</div>
+			<!--textarea-->
+			<div class="form-group">
+				<textarea class="form-control" rows="3"></textarea>
+			</div>
+			<br><br>
+			<h4 class="bottom-line">加icon的欄位</h4>
+			<!--text+icon-->
+			<div class="form-group icon service">
+				<input id="account" type="text" placeholder="帳號" class="form-control">
+			</div>
+			<div class="form-group icon phone">
+				<input id="phone" type="text" placeholder="聯絡電話" class="form-control">
+			</div>
+			<div class="form-group icon mail">
+				<input id="mail" type="text" placeholder="電子郵件" class="form-control">
+			</div>
+			<div class="form-group icon add">
+				<input id="add" type="text" placeholder="住址" class="form-control">
+			</div>
+			<div class="form-group icon password-edit">
+				<input type="password" placeholder="修改密碼" class="form-control">
+			</div>
+			<div class="form-group icon password">
+				<input type="password" placeholder="確認密碼" class="form-control">
+			</div>
+			<br><br>
+			<h4 class="bottom-line">按鈕樣式</h4>
+			<!--button-->
+			<div class="btn-block t20 text-center">
+				<button type="button" class="btn btn-default">送出</button>
+				<button type="button" class="btn btn-wol">送出</button>
+			</div>
+			<div class="btn-block t20">
+				<button type="button" class="btn btn-info">送出</button>
+			</div>
+			<br><br>
+			<h4 class="bottom-line">商品用欄位</h4>
+			<div class="product">
+				<div class="pro-select">
+					<div class="name">選擇</div>
+					<div class="dropdown"></div>
+				</div>
+				<div class="pro-amount">
+					<div class="name">數量</div>
+					<div class="control">
+						<button class="btn btn-minus" type="button"><i class="fa fa-minus"></i></button>
+						<input type="number" value="1">
+						<button class="btn btn-plus" type="button"><i class="fa fa-plus"></i></button>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			<h4 class="bottom-line">商品</h4>
+			<div class="product" style="width: 150px;"> <!--內容會配合寬度自動調整寬 -->
+				<div class="pro-item">
+					<div class="pro-img box-shadow">
+						<img src="images/pic/pic01.jpg" alt="">
+					</div>
+					<div class="pro-text">
+						<div class="pro-name">貓咪愛跳舞長袖洋裝</div>
+						<div class="pro-price"><del>NT.750</del> <span class="colorR">NT.599</span></div>
+						<div class="pro-select">
+							<div class="name">選擇</div>
+							<div class="dropdown"></div>
+						</div>
+						<div class="pro-amount">
+							<div class="name">數量</div>
+							<div class="control">
+								<button class="btn btn-minus" type="button"><i class="fa fa-minus"></i></button>
+								<input type="number" value="1">
+								<button class="btn btn-plus" type="button"><i class="fa fa-plus"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="btn-block">
+						<button type="button" class="btn btn-default">加入購物車</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script>
+		$(function(){
+			// 下拉選單的資料來源
+			var ddData = [
+				{
+					text: '粉 - 90',
+					value: 1,
+					imageSrc: 'images/pic/select01.jpg'
+				},
+				{
+					text: '粉 - 100',
+					value: 2,
+					imageSrc: 'images/pic/select01.jpg'
+				},
+				{
+					text: '粉 - 110',
+					value: 3,
+					imageSrc: 'images/pic/select01.jpg'
+				},
+				{
+					text: '灰 - 90',
+					value: 4,
+					imageSrc: 'images/pic/select02.jpg'
+				},
+				{
+					text: '灰 - 100',
+					value: 5,
+					imageSrc: 'images/pic/select02.jpg'
+				},
+				{
+					text: '灰 - 110',
+					value: 6,
+					imageSrc: 'images/pic/select02.jpg'
+				}
+			];
+	 
+			// 轉換成 ddslick 下拉選單
+			$('.dropdown').ddslick({
+				data: ddData
+			});
+		});
+	</script>
+	
+  </body>
+</html>
