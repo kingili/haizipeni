@@ -1,3 +1,15 @@
+
+//顯示loading
+var loading = function(){
+	$('.bg_load').show();
+    $('.load-wrapper').show();
+}
+//關閉loading
+var loadingClose = function(){
+	$(".bg_load").fadeOut("slow");
+	$(".load-wrapper").fadeOut("slow");
+}
+
 $(function(){
 	$('.carousel').carousel();
 	$('#menu a').click(function(e){
@@ -86,6 +98,7 @@ $(function(){
 		}
 
 	});
+
 	
 });
 
@@ -94,6 +107,5 @@ $(document).ready(function() {
 });
 
 $(window).load(function() {
-    $(".bg_load").fadeOut("slow");
-    $(".load-wrapper").fadeOut("slow");
+    loadingClose();
 })
