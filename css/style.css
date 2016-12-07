@@ -423,13 +423,17 @@ header .search {
 }
 
 /********** Home ***********/
-#slider {
+#owl-banner {
   padding-top: 42px;
-  position: relative;
 }
-#slider a img {
-  max-width: none;
+#owl-banner a img {
+  display: block;
   width: 100%;
+  height: auto;
+}
+#owl-banner .owl-controls {
+  left: 0;
+  bottom: 5px;
 }
 
 .ad {
@@ -769,19 +773,15 @@ header .search {
   padding-bottom: 45px;
   border-bottom: 1px solid #d2d2d2;
 }
-#pro-slider .carousel-indicators {
+#pro-slider .owl-controls {
   bottom: 10px;
 }
-#pro-slider .carousel-indicators li {
+#pro-slider .owl-controls .owl-dot {
   border: 2px solid #adadad;
 }
-#pro-slider .carousel-indicators li.active {
+#pro-slider .owl-controls .owl-dot.active {
   border: 2px solid #adadad;
   background: #adadad;
-}
-#pro-slider .carousel-inner img {
-  max-width: 100%;
-  margin: 0 auto;
 }
 
 .productPost .pro-text {
@@ -1101,7 +1101,8 @@ form .btn-block .btn {
 }
 
 .dd-option-image, .dd-selected-image {
-  width: 25px;
+  width: 25px !important;
+  display: inline-block !important;
 }
 
 .dd-option {
@@ -1222,24 +1223,6 @@ form .btn-block .btn {
   font-size: .9em;
 }
 
-.carousel-indicators {
-  margin-bottom: 0;
-}
-.carousel-indicators li {
-  width: 15px;
-  height: 15px;
-  margin: 0 5px;
-  border: 2px solid #fff;
-  background: transparent;
-}
-.carousel-indicators li.active {
-  width: 15px;
-  height: 15px;
-  margin: 0 5px;
-  border: 2px solid #fff;
-  background: #fff;
-}
-
 .rotate-45 {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -1288,6 +1271,38 @@ form .btn-block .btn {
   display: block;
   height: 0;
   clear: both;
+}
+
+/****owl****/
+.owl-carousel {
+  position: relative;
+}
+.owl-carousel .item {
+  text-align: center;
+}
+
+.owl-controls {
+  position: absolute;
+  margin-bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.owl-controls .owl-dot {
+  width: 15px;
+  height: 15px;
+  margin: 0 8px;
+  border: 2px solid #fff;
+  display: inline-block;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.owl-controls .owl-dot.active {
+  width: 15px;
+  height: 15px;
+  margin: 0 8px;
+  border: 2px solid #fff;
+  background: #fff;
 }
 
 /****load****/

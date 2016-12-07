@@ -11,7 +11,6 @@ var loadingClose = function(){
 }
 
 $(function(){
-	$('.carousel').carousel();
 	$('#menu a').click(function(e){
 		var $id=$('#'+$(this).attr('data-id'));
 		if($id.size()!=0){
@@ -61,6 +60,13 @@ $(function(){
 	            items:6
 	        }
 	    }
+	});
+	$(".full-carousel").owlCarousel({
+		autoplay:true,
+	    autoplayTimeout:3000,
+	    autoplayHoverPause:true,
+	    items:1,
+	    loop:true,
 	});
 
 
