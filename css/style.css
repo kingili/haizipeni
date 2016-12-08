@@ -320,25 +320,20 @@ header .search {
   padding-right: 10px;
 }
 
-.page-0 {
-  padding: 0;
+.main-wrap {
+  padding-top: 42px;
 }
-.page-0 .breadcrumb {
+
+.page .breadcrumb {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.page-b {
-  padding: 42px 0 0;
-}
 .page-b .breadcrumb {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.page-t {
-  padding-top: 42px;
-}
 .page-t h4 {
   margin-left: 0;
   margin-right: 0;
@@ -423,9 +418,6 @@ header .search {
 }
 
 /********** Home ***********/
-#owl-banner {
-  padding-top: 42px;
-}
 #owl-banner a img {
   display: block;
   width: 100%;
