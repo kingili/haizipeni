@@ -324,6 +324,9 @@ header .search {
   padding-top: 42px;
 }
 
+.page {
+  padding: 0;
+}
 .page .breadcrumb {
   padding-left: 10px;
   padding-right: 10px;
@@ -713,7 +716,7 @@ header .search {
   padding-right: 35px;
 }
 .product .control {
-  max-width: 145px;
+  max-width: 130px;
   position: relative;
 }
 .product .control .btn {
@@ -752,9 +755,6 @@ header .search {
   width: 100%;
   max-width: 145px;
 }
-.product .pro-price del {
-  font-size: .8em;
-}
 
 .pro-slick .pro-item {
   margin-bottom: 0;
@@ -763,7 +763,6 @@ header .search {
 
 #pro-slider {
   padding-bottom: 45px;
-  border-bottom: 1px solid #d2d2d2;
 }
 #pro-slider .owl-controls {
   bottom: 10px;
@@ -777,23 +776,45 @@ header .search {
 }
 
 .productPost .pro-text {
+  padding: 12px 0 20px;
+  margin-bottom: 30px;
   border-bottom: 1px solid #d2d2d2;
-  padding: 12px 0;
-  margin-bottom: 12px;
 }
 .productPost .pro-text .pro-number {
   font-size: .9em;
   color: #adadad;
   margin-bottom: 10px;
 }
+.productPost .pro-text .pro-name {
+  font-size: 1.6em;
+}
+.productPost .pro-text .colorR {
+  font-size: 2em;
+  display: block;
+}
+.productPost .pro-text .pro-price {
+  text-align: right;
+}
+.productPost .pro-text .pro-price del {
+  font-size: 1em;
+}
 .productPost .pro-select {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d2d2d2;
 }
 .productPost .pro-amount {
-  border-bottom: 1px solid #d2d2d2;
   padding-bottom: 12px;
 }
+.productPost .pro-amount .btn-default {
+  font-size: 1.2em;
+  margin-top: -4px;
+}
 
+.pro-content {
+  padding-top: 35px;
+  border-top: 1px solid #d2d2d2;
+}
 .pro-content h1 {
   color: #b58f6b;
   font-size: 1.4em;
@@ -1069,7 +1090,7 @@ form .btn-block .btn {
 /****** ddslick *******/
 .dropdown, .dd-select, .dd-options {
   width: 100% !important;
-  max-width: 145px;
+  max-width: 130px;
 }
 .dropdown label, .dd-select label, .dd-options label {
   line-height: 1 !important;
@@ -1480,6 +1501,37 @@ form .btn-block .btn {
   }
   .product .btn-block {
     position: initial;
+  }
+  .product .pro-price del {
+    font-size: .8em;
+  }
+
+  #pro-slider {
+    border-bottom: 1px solid #d2d2d2;
+  }
+
+  .productPost .pro-text {
+    padding: 12px 0;
+    margin-bottom: 20px;
+  }
+  .productPost .pro-text .pro-name {
+    font-size: 1.2em;
+  }
+  .productPost .pro-text .colorR {
+    font-size: 1.4em;
+    display: inline-block;
+  }
+  .productPost .pro-text .pro-price {
+    text-align: left;
+  }
+  .productPost .pro-select {
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .productPost .pro-amount .btn-default {
+    font-size: 1em;
+    margin-top: 0;
   }
 
   .ad {
