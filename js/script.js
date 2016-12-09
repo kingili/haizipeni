@@ -2,6 +2,9 @@
 //顯示loading
 var loading = function(){
 	$('#loadingBox').modal('show');
+
+	//測試關閉用, 請把setTimeout刪除,自訂js
+	setTimeout("loadingClose()",2000);
 }
 //關閉loading
 var loadingClose = function(){
