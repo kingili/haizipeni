@@ -319,6 +319,27 @@ header .search {
   background: #ea4640 url(../images/icon/icon_plurk.png) no-repeat 45px center;
 }
 
+.pupopWindow .pupop {
+  padding: 5px;
+}
+.pupopWindow h3 {
+  padding-left: 0;
+  background-color: #b58f6b;
+  color: #fff;
+  padding: 5px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+.pupopWindow .btn-block {
+  margin-top: 20px;
+  border-top: 1px solid #d2d2d2;
+  padding: 10px;
+}
+.pupopWindow .pupop-block {
+  padding: 0 10px;
+}
+
 #loadingBox .pupop {
   padding: 2px 15px;
 }

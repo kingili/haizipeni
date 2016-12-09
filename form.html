@@ -126,8 +126,18 @@
 			<h4 class="bottom-line">呼叫loading動畫</h4>
 				顯示loading: <br>
                 loading();<br><br>
+                <button type="button" class="btn btn-default" onclick="loading();">呼叫貓貓</button><br><br>
                 關閉loading: <br>
 			    loadingClose();
+			    
+				<!-- loading 彈窗 -->
+			    <div id="loadingBox" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+			    	<div class="modal-dialog pupop-wrap">
+			    		<div class="pupop">
+							<img src="images/loading.gif" alt="">
+			    		</div>
+			    	</div>
+			    </div>
 			<br><br>
 			<h4 class="bottom-line">彈窗</h4>
 				顯示彈窗(js控制): <br>
@@ -138,13 +148,19 @@
                 關閉彈窗: <br>
 			    $('#pupopWindow').modal('hide');<br><br>
 
-
-			    <div id="pupopWindow" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+				<!-- 彈窗寫法如下-->
+			    <div id="pupopWindow" class="modal fade pupopWindow" tabindex="-1" role="dialog" aria-hidden="true">
 			    	<div class="modal-dialog pupop-wrap">
 			    		<div class="pupop">
-							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			    			<!-- 顯示內容-->
 							<h3 class="text-center">彈窗</h3>
-							<p>123123212311213213213</p>
+							<div class="pupop-block">
+								<p>123123212311213213213</p>
+							</div>
+							<div class="btn-block text-center">
+								<button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">確認</button>
+							</div>
+			    			<!-- 顯示內容 end-->
 			    		</div>
 			    	</div>
 			    </div>
