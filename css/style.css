@@ -1167,7 +1167,7 @@ form .btn-block .btn {
   color: #333;
   background-color: #d2d2d2;
 }
-.btn-default:hover {
+.btn-default:hover, .btn-default:focus {
   background-color: #b58f6b;
   color: #fff;
 }
@@ -1181,7 +1181,7 @@ form .btn-block .btn {
   color: #333;
   background-color: #d2d2d2;
 }
-.btn-low:hover {
+.btn-low:hover, .btn-low:focus {
   color: #fff;
   background-color: #adadad;
 }
@@ -1197,7 +1197,7 @@ form .btn-block .btn {
   border: 1px solid #d2d2d2;
   color: #b58f6b;
 }
-.btn-info:hover {
+.btn-info:hover, .btn-info:focus {
   background: transparent;
   color: #b58f6b;
   border: 1px solid #d2d2d2;
