@@ -265,11 +265,13 @@ header .search {
   vertical-align: middle;
   padding: 0;
   margin: 0;
+  height: 100%;
+  text-align: center;
 }
 .pupop-wrap:before {
   content: '';
   width: 0;
-  height: 100px;
+  height: 100%;
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -283,6 +285,9 @@ header .search {
   margin: auto;
   width: 240px;
   padding: 20px 15px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
 }
 .pupop .close {
   margin-bottom: 10px;
@@ -312,6 +317,10 @@ header .search {
 }
 .pupop .btn-plurk {
   background: #ea4640 url(../images/icon/icon_plurk.png) no-repeat 45px center;
+}
+
+#loadingBox .pupop {
+  padding: 2px 15px;
 }
 
 /******  *******/
@@ -631,6 +640,7 @@ header .search {
 .product .pro-item {
   position: relative;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 .product a {
   display: block;
@@ -750,6 +760,7 @@ header .search {
   left: 200px;
   bottom: 0;
   text-align: left;
+  width: initial;
 }
 .product .btn-block button {
   width: 100%;
@@ -759,6 +770,10 @@ header .search {
 .pro-slick .pro-item {
   margin-bottom: 0;
   padding: 0 8px;
+}
+
+#product .btn-block {
+  padding: 0 15px;
 }
 
 #pro-slider {
@@ -1127,15 +1142,27 @@ form .btn-block .btn {
   color: #fff;
   border: none;
 }
+.btn-default:active, .btn-default:active:hover {
+  color: #333;
+  background-color: #d2d2d2;
+}
+.btn-default:hover {
+  background-color: #b58f6b;
+  color: #fff;
+}
 
-.btn-wol {
+.btn-low {
   color: #fff;
   background-color: #adadad;
   border: none;
 }
-.btn-wol:hover, .btn-wol:active:hover {
+.btn-low:active, .btn-low:active:hover {
   color: #333;
-  background-color: #e6e6e6;
+  background-color: #d2d2d2;
+}
+.btn-low:hover {
+  color: #fff;
+  background-color: #adadad;
 }
 
 .btn-info {
@@ -1144,8 +1171,13 @@ form .btn-block .btn {
   border: 1px solid #d2d2d2;
   color: #b58f6b;
 }
-.btn-info:hover, .btn-info:active:hover {
+.btn-info:active, .btn-info:active:hover {
   background: #f5f5f5;
+  border: 1px solid #d2d2d2;
+  color: #b58f6b;
+}
+.btn-info:hover {
+  background: transparent;
   color: #b58f6b;
   border: 1px solid #d2d2d2;
 }

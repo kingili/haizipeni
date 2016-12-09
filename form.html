@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>台灣原創設計的品牌童裝 - Haizipeni 孩子陪你</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jquery.ddslick.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -14,10 +15,10 @@
       <script src="js/respond.js"></script>
     <![endif]-->
     <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/jquery.ddslick.js"></script>
-    <script src="js/imgLiquid-min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/imgLiquid.js"></script>
+    <script src="js/owl.carousel.js"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -116,7 +117,7 @@
 			<!--button-->
 			<div class="btn-block t20 text-center">
 				<button type="button" class="btn btn-default">送出</button>
-				<button type="button" class="btn btn-wol">送出</button>
+				<button type="button" class="btn btn-low">送出</button>
 			</div>
 			<div class="btn-block t20">
 				<button type="button" class="btn btn-info">送出</button>
@@ -127,7 +128,26 @@
                 loading();<br><br>
                 關閉loading: <br>
 			    loadingClose();
-			</div>
+			<br><br>
+			<h4 class="bottom-line">彈窗</h4>
+				顯示彈窗(js控制): <br>
+                $('#pupopWindow').modal('show');<br><br>
+				顯示彈窗(連結控制): <br>
+                <p>&lt;a href="javascript:;" class="popup" data-toggle="modal" data-target="#pupopWindow"&gt;</p><br>
+			    <a href="javascript:;" class="popup btn btn-default" data-toggle="modal" data-target="#pupopWindow">彈窗</a><br><br>
+                關閉彈窗: <br>
+			    $('#pupopWindow').modal('hide');<br><br>
+
+
+			    <div id="pupopWindow" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+			    	<div class="modal-dialog pupop-wrap">
+			    		<div class="pupop">
+							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<h3 class="text-center">彈窗</h3>
+							<p>123123212311213213213</p>
+			    		</div>
+			    	</div>
+			    </div>
 			<br><br>
 			<h4 class="bottom-line">商品用欄位</h4>
 			<div class="product">

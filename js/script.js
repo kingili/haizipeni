@@ -1,13 +1,11 @@
 
 //顯示loading
 var loading = function(){
-	$('.bg_load').show();
-    $('.load-wrapper').show();
+	$('#loadingBox').modal('show');
 }
 //關閉loading
 var loadingClose = function(){
-	$(".bg_load").fadeOut("slow");
-	$(".load-wrapper").fadeOut("slow");
+	$('#loadingBox').modal('hide');
 }
 
 $(function(){
@@ -113,5 +111,6 @@ $(document).ready(function() {
 });
 
 $(window).load(function() {
-    loadingClose();
+	$(".bg_load").fadeOut("slow");
+	$(".load-wrapper").fadeOut("slow");
 })
