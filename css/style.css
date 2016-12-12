@@ -792,6 +792,9 @@ header .search {
   margin-bottom: 0;
   padding: 0 8px;
 }
+.pro-slick .owl-controls {
+  display: none;
+}
 
 #product .btn-block {
   padding: 0 15px;
