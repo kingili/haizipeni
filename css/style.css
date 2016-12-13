@@ -795,6 +795,9 @@ header .search {
 .pro-slick .owl-controls {
   display: none;
 }
+.pro-slick .dd-options {
+  bottom: 33px;
+}
 
 #product .btn-block {
   padding: 0 15px;
