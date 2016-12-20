@@ -1,0 +1,173 @@
+@mixin ViewApp {
+	header{
+		padding: .5em 0;
+	}
+	#menu{
+		nav{
+			overflow-y: auto;
+			padding-bottom: 16px;
+			white-space: nowrap;
+			position: relative;
+			bottom: -16px;
+			margin-top: -16px;
+		}
+		a{
+			float: none;
+			display: inline-block;
+			margin-left: -4px;
+			width: initial;
+			padding: 8px 20px;
+		}
+		&:before{
+			font-family: FontAwesome;
+			content: '\f100';
+			position: fixed;
+			left:5px;
+			top:55px;
+			color:$colorBr1;
+			animation: slideinL 1s infinite alternate;
+			z-index: 99;
+			display: none;
+		}
+		&:after{
+			font-family: FontAwesome;
+			content: '\f101';
+			position: fixed;
+			right:5px;
+			top:55px;
+			color:$colorBr1;
+			animation: slideinR 1s infinite alternate;
+			z-index: 99;
+			display: block;
+		}
+		&.leftshow{
+			&:before{
+				display: block;
+			}
+			&:after{
+				display: block;
+			}
+		}
+		&.righthide{
+			&:after{
+				display: none!important;
+			}
+		}
+	}
+	.table-wrap{
+		font-size: .85em;
+	}
+
+	/********** News & Blog ***********/
+	.article,.news{
+		.text{
+			min-height: initial;
+		}
+	}
+	/******  Product *******/
+	.product{
+		.pro-item{
+			
+		}
+		.tag-bottom-right{
+			width: 75px;
+			height: 75px;
+			font-size: .9em;
+			span{
+				bottom:6px;
+			}
+		}
+		.tag-bottom{
+			font-size: .9em;
+		}
+		.pro-name{
+			font-size: .9em;
+		}
+		.pro-select{
+			font-size: .9em;
+		}
+		.pro-amount{
+			font-size: .9em;
+		}
+		.btn-block{
+			position: initial;
+		}
+		.pro-price{
+			del{
+				font-size: .8em;
+			}
+		}
+	}
+
+	#pro-slider{
+		border-bottom: 1px solid $colorGy1;
+	}
+	.productPost{
+		.pro-text{
+			padding: 12px 0;
+			margin-bottom: 20px;
+			.pro-name{
+				font-size: 1.2em;
+			}
+			.colorR{
+				font-size: 1.4em;
+				display: inline-block;
+			}
+			.pro-price{
+				text-align: left;
+			}
+		}
+		.pro-select{
+			margin-bottom: 10px;
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+		.pro-amount{
+			.btn-default{
+				font-size: 1em;
+				margin-top: 0;
+			}
+		}
+	}
+	.ad{
+		padding: 10px 0;
+	}
+
+	#memberInfo{
+		.nav-tabs > li {
+    		width: initial;
+    	}
+	}
+	#cart{
+		.product-list{
+			.pro-item{
+				>a{
+					width: 105px;
+				}
+				.pro-text{
+					padding-left: 8px;
+				}
+			}
+		}
+		.cart-fin{
+			padding-top: 35px;
+			padding-bottom: 110px;
+		}
+		.pro-slick{
+			.pro-item{
+			}
+		}
+	}
+	#ab{
+		.pro-slick{
+			.pro-item{
+			}
+		}
+	}
+
+
+	.nav-tabs>li>a{
+	    padding: 5px 10px;
+	    font-size: .85em;
+	}
+}

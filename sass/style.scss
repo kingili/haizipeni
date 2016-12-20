@@ -1,0 +1,18 @@
+/* 
+for haizipeni
+create 2016/11/18
+author insowe Gili
+*/
+@charset "UTF-8";
+@import "compass/css3";
+@import "setting";
+@import "base";
+@import "app";
+@import "pad";
+
+
+@include ViewBase();
+@include ViewPad();
+@media screen and (max-width: 767px) {
+	@include ViewApp();
+}

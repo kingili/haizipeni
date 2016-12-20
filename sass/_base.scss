@@ -1,0 +1,71 @@
+@mixin ViewBase {
+	html,body{
+		margin: 0;
+		padding: 0;
+		font-family: $fontFamily;
+		font-size: 16px;
+		color:$colorFont;
+		line-height: 1.6;
+		font-weight: 300;
+	}
+	html{
+		height: 100%;
+	}
+	body{
+		min-height: 100%;
+		padding-top: 46px;
+		padding-bottom: 160px;
+		position: relative;
+		@include afterClear();
+	}
+	h1,h2,h3,h4,h5 {
+		margin: 0;
+		letter-spacing: 1px;
+	}
+	input[type="text"],input[type="number"],input[type="password"], select, textarea{
+		@include box-sizing(border-box);
+		outline: none;
+		padding: .2em .5em;
+		height: 35px;
+		line-height: 35px;
+		font-family: $fontFamily;
+		border: 1px solid $colorGy1;
+	}
+	input[placeholder]{
+		font-size: .8em;
+	}
+	button{
+		cursor: pointer;
+		border: none;
+		font-family: $fontFamily;
+		font-size: 1em;
+	}
+	p{
+		margin: 0;
+		padding: 0;
+	}
+	a{
+		outline: 0;
+		border: 0;
+		color:$colorFont;
+		text-decoration: none;
+		&:focus, &:hover{
+			color:$colorFont;
+			text-decoration: none;
+			outline: none;
+		}
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+		border: none;
+	}
+	ul, li{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.row{
+		margin: 0;
+	}
+}
