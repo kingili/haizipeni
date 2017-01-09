@@ -129,9 +129,24 @@ header .search {
   padding: 8px 0;
   text-align: center;
   width: 12.5%;
+  position: relative;
 }
 #menu a:hover, #menu a.active {
   background-color: #eeeeee;
+}
+#menu a .hot {
+  display: inline-block;
+  background-color: #eb6877;
+  color: #fff;
+  font-size: 10px;
+  padding: 0 4px 0 3px;
+  line-height: 1.4;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  position: absolute;
+  right: 10px;
+  top: 2px;
 }
 #menu:before {
   display: none;
@@ -1209,6 +1224,21 @@ form .btn-block .btn {
   border: 1px solid #d2d2d2;
 }
 
+.btn-primary {
+  background-color: #d2d2d2 !important;
+  color: #333 !important;
+  border: none;
+  text-align: center;
+}
+.btn-primary:active, .btn-primary:active:hover, .btn-primary:hover, .btn-primary:focus, .btn-primary.active {
+  color: #fff !important;
+  background-color: #eb6877 !important;
+}
+
+.btn-group {
+  margin-top: 10px;
+}
+
 .btn {
   padding-top: 7px;
   padding-bottom: 7px;
@@ -1221,7 +1251,7 @@ form .btn-block .btn {
 .menu-group {
   position: fixed;
   left: 0;
-  top: 87.6px;
+  top: 77.6px;
   background-color: #fff;
   z-index: 999;
   width: 100%;

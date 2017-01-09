@@ -30,7 +30,7 @@
 	</header>
 	<div id="menu">
 		<nav>
-			<a href="javascript:;" data-id="menu-item01">Boys</a>
+			<a href="javascript:;" data-id="menu-item01">Boys<span class="hot">Hot</span></a>
 			<a href="javascript:;" data-id="menu-item02">Girls</a>
 			<a href="javascript:;" data-id="menu-item03">配件</a>
 			<a href="salelist.html" >Sale</a>
@@ -93,73 +93,68 @@
 		</div>
 		<section class="section">
 			<form action="cart3.html">
+				<h4>送貨地區</h4>
+				<div class="block form-group">
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-primary active">
+                            <input type="radio" name="LogisticsSubType" value="HCT" autocomplete="off" checked=""> 臺灣
+                        </label>
+						<label class="btn btn-primary">
+                            <input type="radio" name="LogisticsSubType" value="SF" autocomplete="off"> 信用卡
+                        </label>
+					</div>
+				</div>
+
 				<h4>付款方式</h4>
 				<div class="block form-group">
-					<div class="radio">
-					  	<label class="radio-inline">
-						  <input type="radio" name="pay" id="pay1" value="pay1" checked> 貨到付款
-						</label>
-						<label class="radio-inline">
-						  <input type="radio" name="pay" id="pay2" value="pay2"> 信用卡
-						</label>
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-primary active">
+                            <input type="radio" name="PaymentType" value="PayOnDelivery" autocomplete="off" checked=""> 貨到付款
+                        </label>
+						<label class="btn btn-primary">
+                            <input type="radio" name="PaymentType" value="CreditCard" autocomplete="off">  信用卡
+                        </label>
 					</div>
 				</div>
 
 				<h4>使用優惠券</h4>
-				<div class="block form-group">
-					<div class="radio">
-					  	<label>
-						  <input type="radio" name="coupon" id="coupon1" value="coupon1" checked onchange="disableSwitch(this.id);"> 不使用
-						</label>
-					</div>
-					<div class="radio">
-						<label class="radio-inline">
-							<input type="radio" name="coupon" id="coupon2" value="coupon2" onchange="disableSwitch(this.id);"> 我的優惠券
-						</label>
-						<fieldset disabled class="radio-inline">
-							<select class="form-control">
-								<option>50元折價券 - 2016/11/12到期</option>
-								<option>50元折價券 - 2016/11/30到期</option>
-							</select>
-						</fieldset>
-					</div>
-					<div class="radio">
-						<label class="radio-inline">
-							<input type="radio" name="coupon" id="coupon3" value="coupon3" onchange="disableSwitch(this.id);"> 輸入優惠券序號
-						</label>
-						<fieldset disabled class="radio-inline">
-							<input type="text" name="coupon" class="form-control">
-						</fieldset>
-						<p class="radio-inline">可抵用金額 <span class="colorR">50</span>元</p>
-					</div>
-				</div>
+				<div class="block">
+	                <div class="form-group icon service">
+	                    <input type="text" placeholder="折價券代碼：(區分大小寫)" class="form-control" id="inputCouponCode" name="CouponCode" value="">
+	                </div>
+	                <div class="btn-block text-center">
+	                    <button type="button" class="btn btn-default" onclick="javascript:useCoupon();">確定使用</button>
+	                </div>
+	            </div>
 
 				<h4>發票選擇</h4>
 				<div class="block form-group">
-					<div class="radio">
-					  	<label>
-							<input type="radio" name="invoice" id="invoice1" value="invoice1" onchange="disableSwitch(this.id);"> 捐贈發票
-						</label>
+					<div class="nav nav-tabs btn-group" role="tablist" data-toggle="buttons">
+				    	<a href="#invoiceOne" aria-controls="invoiceOne" role="tab" data-toggle="tab" class="btn btn-primary active">
+							<input type="radio" name="options" id="option1" autocomplete="off" checked>捐贈發票                 
+						</a>
+				    	<a href="#invoiceTwo" aria-controls="invoiceTwo" role="tab" data-toggle="tab" class="btn btn-primary">
+							<input type="radio" name="options" id="option2" autocomplete="off">電子發票
+						</a>
+				    	<a href="#invoiceThree" aria-controls="invoiceThree" role="tab" data-toggle="tab" class="btn btn-primary">
+							<input type="radio" name="options" id="option2" autocomplete="off">三聯式紙本發票
+						</a>
 					</div>
-					<div class="radio">
-						<label>
-						  <input type="radio" name="invoice" id="invoice2" value="invoice2" onchange="disableSwitch(this.id);"> 聯電子發票
-						</label>
-					</div>
-					<div class="radio">
-						<label>
-							<input type="radio" name="invoice" id="invoice3" value="invoice3" onchange="disableSwitch(this.id);">  三聯式紙本發票
-							<fieldset disabled>
-								<div class="input-group">
-									<span class="input-group-addon" id="input-addon1">統一編號：</span>
-									<input type="text" name="no1" class="form-control" aria-describedby="input-addon1">
-								</div>
-								<div class="input-group">
-									<span class="input-group-addon" id="input-addon2">發票抬頭：</span>
-									<input type="text" name="no2" class="form-control" aria-describedby="input-addon2">
-								</div>
-							</fieldset>
-						</label>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="invoiceOne"></div>
+						<div role="tabpanel" class="tab-pane" id="invoiceTwo"></div>
+						<div role="tabpanel" class="tab-pane" id="invoiceThree">
+							<div class="input-group">
+								<span class="input-group-addon" id="input-addon1">統一編號：</span>
+								<input type="text" name="no1" class="form-control" aria-describedby="input-addon1">
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon" id="input-addon2">發票抬頭：</span>
+								<input type="text" name="no2" class="form-control" aria-describedby="input-addon2">
+							</div>
+						</div>
 					</div>
 				</div>
 

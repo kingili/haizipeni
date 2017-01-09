@@ -33,8 +33,21 @@
 			padding: 8px 0;
 			text-align: center;
 			width: 12.5%;
+			position: relative;
 			&:hover,&.active{
 				background-color: $colorGy2;
+			}
+			.hot{
+				display: inline-block;
+				background-color: $colorR;
+				color:#fff;
+				font-size: 10px;
+				padding: 0 4px 0 3px;
+				line-height: 1.4;
+				@include border-radius(5px);
+				position: absolute;
+				right:10px;
+				top:2px;
 			}
 		}
 		&:before{
@@ -1144,6 +1157,19 @@
 			border: 1px solid $colorGy1;
 		}
 	}
+	.btn-primary{
+		background-color: $colorGy1!important;
+		color: #333!important;
+		border: none;
+		text-align: center;
+		&:active,&:active:hover,&:hover,&:focus,&.active{
+			color:#fff!important;
+		    background-color: $colorR!important;
+		}
+	}
+	.btn-group{
+		margin-top: 10px;
+	}
 	.btn{
 		padding-top: 7px;
 		padding-bottom: 7px;
@@ -1154,7 +1180,7 @@
 	.menu-group{
 		position: fixed;
 		left:0;
-		top:87.6px;
+		top:77.6px;
 		background-color: #fff;
 		z-index: 999;
 		width: 100%;
