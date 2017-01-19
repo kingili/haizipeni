@@ -683,6 +683,7 @@ header .search {
 }
 .product .pro-img {
   margin-bottom: 5px;
+  padding: 68% 0;
   display: block;
   position: relative;
   -moz-box-shadow: #d2d2d2 0 1px 3px;
@@ -692,6 +693,9 @@ header .search {
 .product .pro-img img {
   max-width: initial;
   width: 100%;
+}
+.product .pro-img > img {
+  display: none;
 }
 .product .tag-brand {
   position: absolute;

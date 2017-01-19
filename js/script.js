@@ -106,7 +106,10 @@ $(function(){
 
 	});
 
-	
+	$('.product .pro-img > img').each(function(){
+		var $bg=$(this).attr('src');
+		$(this).parents(".pro-img").css({'background':'url('+$bg+') no-repeat center center','background-size':'cover'});
+	});
 });
 
 $(document).ready(function() {

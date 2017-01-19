@@ -606,12 +606,16 @@
 		}
 		.pro-img{
 			margin-bottom: 5px;
+			padding: 68% 0;
 			display: block;
 			position: relative;
 			@include box-shadow($colorGy1 0 1px 3px);
 			img{
 				max-width: initial;
 				width: 100%;
+			}
+			>img{
+				display: none;
 			}
 		}
 		.tag-brand{
