@@ -1436,9 +1436,15 @@ form .btn-block .btn {
   position: relative;
   vertical-align: middle;
 }
-.bg_load .loading img {
+.bg_load .loading div {
+  display: inline-block;
+  vertical-align: middle;
   width: 80%;
   margin: 0 auto;
+  color: #b58f6b;
+}
+.bg_load .loading div img {
+  margin-bottom: 15px;
 }
 
 @-webkit-keyframes slideinL {
